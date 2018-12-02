@@ -381,30 +381,6 @@
 
       </script>
     </section>
-
-    <!--Slide 24-->
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Which One?
-
-        We need to tell Ruby how we want the answer to behave:
-
-        * ... like a <strong>string</strong>? Switch using ```.to_s```
-        * ... like an <strong>integer</strong>? Switch using ```.to_i```
-
-
-        ```ruby
-        puts "What is your age?"  #Ask for age
-        age = gets.chomp  #Get answer
-        age = age.to_i  #Switch age to an integer
-        age = age + 5  #Add 5 to age
-        age = age.to_s  #Switch age to a string
-        puts "In five years you will be " + age
-        ```
-
-      </script>
-    </section>
-	  
 	  
     <!--Slide 18-->
     <section class="slide" data-markdown>
@@ -517,75 +493,10 @@
       </script>
     </section>
 
-    <!--Slide 29-->
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Guessing Game: Challenge
-
-        * Choose a number (create a new variable)<!-- .element: class="delayed" -->
-        * Ask the user to guess<!-- .element: class="delayed" -->
-        * Get their answer<!-- .element: class="delayed" -->
-        * Switch their answer to an integer<!-- .element: class="delayed" -->
-        * Create an IF condition if they guess too low<!-- .element: class="delayed" -->
-        * Create an ELSIF condition if they guess too high<!-- .element: class="delayed" -->
-        * Create an ELSE condition for the correct guess (only other option)<!-- .element: class="delayed" -->
-        * End your IF, ELSE statement<!-- .element: class="delayed" -->
-
-      </script>
-    </section>
-
-    <!--Slide 30-->
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Guessing Game: Solution
-
-        Create an IF statement:
-
-        ```ruby
-        number = 3  #Choose number
-        puts "Guess a number between 1 and 10"  #Ask user to guess
-        guess = gets.chomp  #Get answer
-        guess = guess.to_i  #Switch guess to an integer
-        if guess < number  #Create condition for lower guess
-	       puts "too small!"
-        elsif guess > number  #Create condition for higher guess
-	       puts "too big!"
-        else  #Create condition for the correct guess (only other option)
-	       puts "just right"
-        end
-        ```
-
-      </script>
-    </section>
-
-    <!--Slide 31-->
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Guessing Game: Random Number
-
-        Replace:
-
-        ```ruby
-        number = rand 1..10
-        ```
-        Chooses a random number between 1 and 10
-
-        ![http://tsaoshin.deviantart.com/art/Part-of-Your-No-388260981](framework/img/workshop/random.png)
-
-        ---
-        <div class="dropdown">
-          <button class="dropbtn">Attributions</button>
-          <div class="dropdown-content">
-            <a href="http://tsaoshin.deviantart.com/art/Part-of-Your-No-388260981">Part of Your No by TsaoShin</a>
-        </div>
-
-        </script>
-      </section>
-
       <!--Slide 32-->
       <section class="slide" data-markdown>
         <script type="text/template">
-        # Guessing Game: Loop
+        # Loops
         ##For example...
         ```ruby
         5.times do  #Loop the program 5 times
@@ -596,43 +507,7 @@
 
         </script>
       </section>
-
-      <!--Slide 33-->
-      <section class="slide" data-markdown>
-        <script type="text/template">
-        # Guessing Game: Loop
-
-        ```ruby
-        number = rand 1..10  #Keep this at the top
-
-        10.times do  #Loop the program for 10 rounds
-
-          puts "Guess a number between 1 and 10"
-          guess = gets.chomp
-          guess = guess.to_i
-          if guess < number
-            puts "too small!"
-          elsif guess > number
-            puts "too big!"
-          else
-            puts "just right"
-            break  #Break the loop when they guess correctly
-          end
-
-        end  #End the loop
-        puts "Game Over"  #Tell the user when the game is over
-        ```
-
-        </script>
-      </section>
-
-      <!--Slide 34-->
-    <section class="slide title" data-markdown>
-      <script type="text/template">
-        #MAIN PROJECT
-      </script>
-    </section>
-
+	  
     <!--Slide 35-->
     <section class="slide" data-markdown>
       <script type="text/template">
